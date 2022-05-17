@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SAD Klima İletişim - Havalandırma, Soğutma, Isıtma, Sıhhi Tesisat, Tesisat projelendirme, HVAC işleri</title>
+    <title>İletişim - SAD Klima Havalandırma, Soğutma, Isıtma, Sıhhi Tesisat, Tesisat projelendirme, HVAC işleri</title>
     <meta name="description" content="SAD Klima klima İletişim, havalandırma, soğutma, ısıtma, sıhhi tesisat, tesisat projelendirme, hvac işleri projelendirmesi yapmaktadır..">
     <meta name="keywords" content="SAD, SAD Klima, hvac, havalandırma,soğutma, ısıtma, sıhhi tesisat, tesisat projelendirme, hvac ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,10 +80,13 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll" href="#">Referanslarımız</a>
+                                    <a class="page-scroll" href="referanslarimiz.html">Referanslarımız</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll active" href="#">İletişim</a>
+                                    <a class="page-scroll" href="hakkimizda.html">Hakkımızda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll active" href="iletisim.html">İletişim</a>
                                 </li>
                             </ul>
                         </div>
@@ -177,13 +180,14 @@
                                 </div>
                             </div>
                         </div>
-                        <form action="assets/php/mail.php" class="contact-form">
+
+                        <form action="mailsend.asp" method="post" id="sadklimailetisim" class="contact-form">
                             <div class="row">
                                 <div class="col-md-12">
                                     <input type="text" name="firma" id="firma" placeholder="Firma adı *" required>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="text" name="adsoyad" id="adsoyad" placeholder="İlgili Adı Soyadı *" required>
+                                    <input type="text" name="ilgili" id="ilgili" placeholder="İlgili Adı Soyadı *" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -232,6 +236,7 @@
         </div>
     </section>
     <!-- ========================= map-section end ========================= -->
+
     <!-- ========================= client-logo-section start ========================= -->
     <section class="client-logo-section pt-100">
         <div class="container">

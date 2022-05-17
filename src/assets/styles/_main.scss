@@ -116,7 +116,21 @@ ul,
 ol {
     margin: 0;
     padding: 0;
-    list-style-type: none
+    list-style: none;
+}
+
+section {
+    ul {
+        li {
+            margin-bottom: 1rem;
+            &:before {
+                content: '\2726';
+                font-size: 1rem;
+                margin-right: .5rem;
+                color: rgba(0, 0, 0, .3);
+            }
+        }
+    }
 }
 
 p {
@@ -1700,10 +1714,19 @@ only screen and (min-width:1200px) and (max-width:1399px) {
     width: 100%
 }
 
-.project-info-box ul li {
-    margin-bottom: 15px;
-    display: flex;
-    font-size: 14px
+.project-info-box ul {
+    margin-bottom: 1rem;
+    li {
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 1rem;
+        &:before {
+            font-size: 1rem;
+            color: green;
+            content: '\2713';
+            margin-right: .5rem;
+        }
+    }
 }
 
 .project-info-box ul li:last-child {
@@ -2571,7 +2594,8 @@ only screen and (min-width:1200px) and (max-width:1399px) {
 }
 
 .page-banner-section {
-    margin-top: 107px
+    margin-top: 107px;
+    height: auto;
 }
 
 @media only screen and (min-width: 768px) and (max-width:991px) {
